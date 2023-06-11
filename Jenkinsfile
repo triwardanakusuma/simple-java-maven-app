@@ -16,7 +16,7 @@ node {
         stage('Deploy') { 
             checkout scm
             sh './jenkins/scripts/deliver.sh'
-            sleep(time: 1, unit: 'MINUTES')
+            //sleep(time: 1, unit: 'MINUTES')
         }
     }
 }
